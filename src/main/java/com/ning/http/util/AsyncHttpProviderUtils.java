@@ -13,7 +13,7 @@
 package com.ning.http.util;
 
 import static com.ning.http.util.MiscUtils.isNonEmpty;
-import static java.nio.charset.StandardCharsets.ISO_8859_1;
+//import static java.nio.charset.StandardCharsets.ISO_8859_1;
 
 import com.ning.http.client.AsyncHttpClientConfig;
 import com.ning.http.client.HttpResponseBodyPart;
@@ -43,7 +43,7 @@ public class AsyncHttpProviderUtils {
         REMOTELY_CLOSED_EXCEPTION.setStackTrace(new StackTraceElement[] {});
     }
 
-    public final static Charset DEFAULT_CHARSET = ISO_8859_1;
+    public final static Charset DEFAULT_CHARSET = Charset.forName("ISO-8859-1");;
 
     static final byte[] EMPTY_BYTE_ARRAY = "".getBytes();
 
